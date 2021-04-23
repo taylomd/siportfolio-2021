@@ -1,0 +1,543 @@
+title {
+  font-size: 40px;
+}
+
+h1 { 
+  text-align: center;
+  color:#012B55 ;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+body {
+  background-color:#FFFFFF;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+footer {
+  background-color: #012B55;
+  color: #FFFFFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Chango', cursive;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+footer p {
+  color: #FFFFFF;
+}
+
+footer a {
+  color: #FFF700;
+}
+
+/* nav */
+
+.nav_links {
+  list-style: none; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_item a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav_item a:hover, a:focus {
+  color: #123C69;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+}
+
+.current_item a {
+  background-color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 1px 1px 1px 1px #FFFFFF;
+  color: #012B55;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+nav {
+  background-color: #012B55;
+  text-align: center;
+
+}
+
+/* myprocess.html*/
+.container {
+ 
+  color: #012B55;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.step-one {
+  background-color: white;
+  border: 10px solid #BAB2B5;
+  padding: 30px;
+  grid-column: 1/ span 1;
+}
+.step-one h2, h3 {
+  text-align: center;
+  color: #AC3B61;
+}
+.step-two {
+  background-color: white;
+  border: 10px solid #BAB2B5 ;
+  padding: 30px;
+  grid-column: 2/ span 1;
+}
+.step-two h2, h3 {
+  text-align: center;
+  color: #AC3B61;
+}
+.step-three {
+  background-color: white;
+  border: 10px solid #BAB2B5;
+  padding: 30px;
+}
+.step-three h2, h3 {
+  text-align: center;
+  color: #AC3B61;
+}
+.step-four {
+  background-color: white;
+  border: 10px solid #BAB2B5;
+  padding: 30px;
+}
+.step-four h2, h3 {
+  text-align: center;
+  color: #AC3B61;
+}
+
+.step-five {
+  background-color: white;
+  border: 10px solid #BAB2B5	;
+  padding: 30px;
+}
+
+.step-five h2, h3 {
+  text-align: center;
+  color: #AC3B61;
+}
+
+.dinner {
+  background-color:white;
+  border: 10px solid #BAB2B5;
+  padding: 30px;
+}
+
+.dinner h2, h3 {
+  text-align: center;
+  color: #012B55;
+}
+.currentlink {
+  color: pink;
+}
+.myadvice {
+  color: #123C69;
+  text-align: start;
+  margin: 20px;
+  
+}
+.skip a {
+  color: #123C69;
+  height: 32px;
+  left:75%;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  }
+  
+  .skip a:focus {
+    transform: translateY(0%);
+  }
+  
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+ 
+
+p {
+  color:black;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.descriptions {
+  border: 3px solid #012B55;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.introtext {
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 3px solid #012B55;
+}
+
+.myacademics {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 5px solid #012B55;
+}
+
+h1 {
+  padding-top: 25px;
+}
+
+#favorites {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom:5%;
+}
+
+h2{
+  color: #012B55;
+}
+
+.myadvice h2 {
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.form-for-contact {
+  color: #012B55;
+  text-align: center;
+}
+
+legend {
+  color: #012B55;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+ .fa-instagram {
+  background: #123C69;
+  color: white;
+}
+
+.fa-facebook {
+  background: #123C69;
+  color: white;
+}
+
+.fa-youtube {
+  background: #AC3B61;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.6;
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input[name=fullname], input[name=email], input[name=message]{
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+button {
+  background-color: #123C69;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  
+}
+
+#myForm {
+  text-align: left;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 125px;
+  height: 175px;
+  border: 1px solid #f1f1f1;
+  margin-top: 75px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .descriptions {
+    margin-right: 75px;
+    margin-left: 75px;
+    font-size: 16px;
+  }
+ 
+  .introtext {
+    margin-right: 75px;
+    margin-left: 75px;
+    font-size: 16px;
+  }
+
+  
+  .nav_links {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .gallery {
+    width:90%;
+    row-gap: 25px;
+    column-gap: 25px;
+  }
+
+  #image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9 {
+    width: 200px;
+    height: 260px;
+    filter: drop-shadow(8px 8px 10px gray);
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 260px;
+    border: 1px solid #f1f1f1;
+  }
+  
+  .myacademics { 
+    margin-right: 75px;
+    margin-left: 75px; 
+    font-size: 16px;
+  }
+
+  .myadvice {
+    margin-right: 75px;
+    margin-left: 75px; 
+    font-size: 16px;
+  }
+  #logo {
+   animation-name: bounceIn;
+   animation-duration: 5s;
+   animation-iteration-count: 1;
+ }
+
+ @-webkit-keyframes bounceIn{
+   from{ 
+     width: 25px;
+     opacity: 0;
+   }
+   to{
+     width: 150px;
+     opacity: 1;
+   }
+   /*Your code here.*/
+ 
+ }
+ 
+ @keyframes bounceIn{
+   /*Your code here.*/
+   from{
+     width: 25px;
+     opacity: 0;
+   }
+   to{
+     width: 150px;
+     opacity: 1;
+   }
+ } 
+ @media (prefers-reduced-motion:reduce ){
+   #logo{
+     animation: none;
+   }
+   .flip-card:active .flip-card-inner {
+    transform: None;
+  }
+
+
+ }
+}
+@media screen and (min-width: 1280px){
+  .gallery{
+    width: 67%;
+    row-gap: 100px;
+    column-gap: 100px;
+  }
+  #image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10, #image11, #image12{
+    width: 250px;
+    height: 330px;
+    filter: drop-shadow(10px  10px 12px gray);
+  }
+  .container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .myacademics{
+    margin-right: 100px;
+    margin-left: 100px; 
+    font-size: 18px;
+  }
+  .myadvice{
+    margin-right: 100px;
+    margin-left: 100px; 
+    font-size: 18px;
+  }
+  .nav_links{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .introtext{
+    margin-right: 100px;
+    margin-left: 100px; 
+    font-size: 18px;
+  }
+  .descriptions{
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: 18px;
+  }
+  footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+  }
+  .flip-card  {
+    background-color: transparent;
+    width: 250px;
+    height: 330px;
+    border: 1px solid #f1f1f1;
+    
+    
+  }
+  .dinner, .lunch, .myadvice{
+    margin-bottom: 100px;
+  }
+  
+  
+}

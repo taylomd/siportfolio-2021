@@ -1,0 +1,75 @@
+<!DOCTYPE  html>
+<html lang="en">
+  <head>
+  <title>Contact | DT Creativity</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class = 'skip'><a href ="#maincontent">Skip to Main Content</a></div>
+      <img src = "images/meme.jpg" width = "150" alt="logo" id = "logo">
+    <nav>
+      <ul class = nav_links>
+        <li class = "nav_item"><a href = "index.html">Home</a></li>
+        <li class = "nav_item"><a href="myprocess.html">My Process</a></li>
+        <li class = "nav_item"><a href="aboutme.html">About Me</a></li>
+        <li class = "current_item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main id = "maincontent">
+      <h1> Contact Me!</h1>
+      <div class = "myacademics">
+        <p> I went to Mount Saint Dominic Academy in New Jersey for high school where I played varsity Lacrosse and Tennis. I took a wide range of classes in high school. My interest in computer science started in my senior year robotics class. I was a part of the National Honors Society, Stock Market Club, and was co-found and president of Habitat for Humanity. </p><br>
+        <p>When I graduated high school, the next stop of my journey was at the Univetsity of Michigan where I am currently a sophomore. I am in the School of Information with a path in User Experience. I have sufficient experience in C++, python, CSS, and HTML. </p><br>
+        <p>Alongside classes, I am a member of and on the Programming Council for the Alpha Gamma chapter of Zeta Tau Alpha. I am a member in Kid’s Kitchen, Habitat for Humanity, and the Women’s Network. College life is busy and stressful. Click on my "Advice" page to see my tips on how to relax your mind and find time for everything as well as your mind. </p><br>
+      </div>
+      
+      <title>Save Web Form Data to Spreadsheets</title>
+	    <script
+		      src="https://code.jquery.com/jquery-3.4.1.js"
+		      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		      crossorigin="anonymous"></script>
+	    <script>
+		      function SubForm (){
+			        $.ajax({
+				          url:"https://api.apispreadsheets.com/data/11092/",
+				          type:"post",
+				          data:$("#myForm").serializeArray(),
+				          success: function(){
+					            alert("Form Data Submitted :)")
+				          },
+				          error: function(){
+					            alert("There was an error :(")
+				          }
+			        });
+		      }
+	    </script>
+      <body>
+	        <form id="myForm">
+		          <label for = "fullname">Enter Your Full Name:</label>
+		          <input type= "text" name="fullname" id= "fullname" />
+		          <br/>
+		          <label for = "email" >Enter Your Email:</label>
+		          <input type = "text" name="email" id="email" />
+		          <br/>
+		          <label for = "message">Leave a Message:</label>
+		          <input type = "text" name="message" id = "message"/>
+		          <br/>
+	        </form>
+	        <button onclick='SubForm()'>Submit</button>
+    </main>
+    <footer>
+      <p> Dane Taylor Creativity ©2021</p>
+      <a href="https://www.linkedin.com/in/dane--taylor/">Connect on LinkedIn!</a>
+    </footer>
+  </body>
+</html>
