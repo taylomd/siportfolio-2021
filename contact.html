@@ -1,7 +1,7 @@
 <!DOCTYPE  html>
 <html lang="en">
   <head>
-  <title>Contact | DT Creativity</title>
+  <title>Contact | Dane Taylor</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
@@ -10,11 +10,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Save Web Form Data to Spreadsheets - Contact Form</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/11332/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+<style type="text/css">.parallax_img {
+	height: 500px;
+	background-image: url('../images/inkplant/code/chicago.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+@media screen and (max-width: 768px) {
+	.parallax_img {
+		background-attachment: inherit;
+	}
+}
+</style>
   </head>
   <body>
     <header>
       <div class = 'skip'><a href ="#maincontent">Skip to Main Content</a></div>
-      <img src = "images/meme.jpg" width = "150" alt="logo" id = "logo">
+      <img src = "images/aye.jpg" width = "120" alt="logo" id = "logo">
     <nav>
       <ul class = nav_links>
         <li class = "nav_item"><a href = "index.html">Home</a></li>
@@ -27,49 +61,70 @@
 
     <main id = "maincontent">
       <h1> Contact Me!</h1>
-      <div class = "myacademics">
-        <p> I went to Mount Saint Dominic Academy in New Jersey for high school where I played varsity Lacrosse and Tennis. I took a wide range of classes in high school. My interest in computer science started in my senior year robotics class. I was a part of the National Honors Society, Stock Market Club, and was co-found and president of Habitat for Humanity. </p><br>
-        <p>When I graduated high school, the next stop of my journey was at the Univetsity of Michigan where I am currently a sophomore. I am in the School of Information with a path in User Experience. I have sufficient experience in C++, python, CSS, and HTML. </p><br>
-        <p>Alongside classes, I am a member of and on the Programming Council for the Alpha Gamma chapter of Zeta Tau Alpha. I am a member in Kid’s Kitchen, Habitat for Humanity, and the Women’s Network. College life is busy and stressful. Click on my "Advice" page to see my tips on how to relax your mind and find time for everything as well as your mind. </p><br>
-      </div>
-      
-      <title>Save Web Form Data to Spreadsheets</title>
-	    <script
-		      src="https://code.jquery.com/jquery-3.4.1.js"
-		      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		      crossorigin="anonymous"></script>
-	    <script>
-		      function SubForm (){
-			        $.ajax({
-				          url:"https://api.apispreadsheets.com/data/11092/",
-				          type:"post",
-				          data:$("#myForm").serializeArray(),
-				          success: function(){
-					            alert("Form Data Submitted :)")
-				          },
-				          error: function(){
-					            alert("There was an error :(")
-				          }
-			        });
-		      }
-	    </script>
       <body>
-	        <form id="myForm">
-		          <label for = "fullname">Enter Your Full Name:</label>
-		          <input type= "text" name="fullname" id= "fullname" />
-		          <br/>
-		          <label for = "email" >Enter Your Email:</label>
-		          <input type = "text" name="email" id="email" />
-		          <br/>
-		          <label for = "message">Leave a Message:</label>
-		          <input type = "text" name="message" id = "message"/>
-		          <br/>
-	        </form>
-	        <button onclick='SubForm()'>Submit</button>
-    </main>
-    <footer>
-      <p> Dane Taylor Creativity ©2021</p>
-      <a href="https://www.linkedin.com/in/dane--taylor/">Connect on LinkedIn!</a>
-    </footer>
+        <div class="parallax_img" id="img1"></div>
+        <form id="myForm">
+          <label>Full Name</label>
+          <br/>
+          <input name="full_name" />
+          <br/>
+          <label>Email</label>
+          <br/>
+          <input name="email" />
+          <br/>
+          <label>Occupation</label>
+          <br/>
+          <input type="radio" id="occupation" name="occupation" value="Student" /> Student<br/>
+          <input type="radio" id="occupation" name="occupation" value="Recruiter" /> Recruiter<br/>
+          <input type="radio" id="occupation" name="occupation" value="Other" /> Other<br/>
+          <br/>
+          <label>Message</label>
+          <br/>
+          <textarea name="message">
+          </textarea>
+          <br/>
+          <br/>
+        </form>
+        <button onclick="SubForm()">Submit</button>
+        <div class = "introtext">
+          <p> Please submit the form above if you would like to get in contact with me.</p><br>
+          <p> I am always open to meeting new people and growing my network!</p><br>
+        </div>  
+      </main>
+      <footer>
+        <p> Dane Taylor Portfolio©</p>
+        <a href="https://www.linkedin.com/in/dane--taylor/">Click to connect with me on LinkedIn!</a>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	/* resize the image(s) on page load */
+	$(document).ready(function() {
+		resize_all_parallax();
+	});
+
+	/* resize the image(s) on page resize */
+	$(window).on('resize', function(){
+		resize_all_parallax();
+	});
+
+	/* keep all of your resize function calls in one place so you don't have to edit them twice (on page load and resize) */
+	function resize_all_parallax() {
+		var div_id = 'img1'; /* the ID of the div that you're resizing */
+		var img_w = 1000; /* the width of your image, in pixels */
+		var img_h = 864; /* the height of your image, in pixels */
+		resize_parallax(div_id,img_w,img_h);
+	}
+
+	/* this resizes the parallax image down to an appropriate size for the viewport */
+	function resize_parallax(div_id,img_w,img_h) {
+		var div = $('#' + div_id);
+		var divwidth = div.width();
+		if (divwidth < 769) { var pct = (img_h/img_w) * 105; } /* show full image, plus a little padding, if on static mobile view */
+		else { var pct = 60; } /* this is the HEIGHT as percentage of the current div WIDTH. you can change it to show more (or less) of your image */
+		var newheight = Math.round(divwidth * (pct/100));
+		newheight = newheight  + 'px';
+		div.height(newheight);
+	}
+</script>
   </body>
 </html>
